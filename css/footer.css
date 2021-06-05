@@ -1,0 +1,112 @@
+.footer {
+  min-height: 390px;
+}
+
+.footer-container { 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 338px;
+  padding: 41px 53px 41px 53px;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  background-color: var(--font-color);
+  background-image: url("../img_hotel/sun.png");
+  background-repeat: no-repeat;
+  background-position: 734px bottom; 
+}
+
+.footer-left-block {
+  flex-basis: 300px;
+  min-height: 251px;
+  margin-right: 121px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-center-block {
+  flex-basis: 360px;
+  min-height: 181px;
+  margin-right: 256px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.footer-address {
+  margin: 0 0 26px 0;
+}
+
+.footer-address:last-child {
+  margin-bottom: 0;
+}
+
+.footer-p {
+  margin: 0 0 34px 0;
+}
+
+.footer-link {
+  display: block;
+  line-height: 24px;
+  color: var(--link-color);
+  transition-duration: 200ms;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+  min-height: 213px;
+  padding: 7px 0 0 0;
+  margin: 0;
+}
+
+.footer-li {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.footer-li:last-child {
+  margin: 0;
+}
+
+.footer-social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition-duration: 200ms;
+  opacity: .5;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+  opacity: 1;
+}
+
+.tripadvisor {
+  background-image: url("../img_hotel/tripadvisor.svg");
+}
+
+.twitter {
+  background-image: url("../img_hotel/twitter.svg");
+}
+
+.facebook {
+  background-image: url("../img_hotel/facebook.svg");
+}
+
+.vk {
+  background-image: url("../img_hotel/vk.svg");
+}
+
+.google {
+  background-image: url("../img_hotel/google.svg");
+}

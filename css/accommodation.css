@@ -1,0 +1,122 @@
+.accommodation {
+  margin-bottom: 44px;
+}
+
+.accommodation-h2 {
+  margin: 0 0 26px 0;
+  padding: 2px 1px 1px 42px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.accommodation-article {
+  min-height: 440px;
+  margin-bottom: 26px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: none;
+  /* padding: 10px 30px 10px 45px; */
+}
+
+.accommodation-article-block {
+  padding: 20px 10px 10px 45px;
+}
+
+.accommodation-img {
+  max-width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.accommodation-link {
+  box-sizing: border-box;
+  padding: 11px 19px;
+  color: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 12px;
+  transition-duration: 200ms;
+}
+
+.col-lg-4:not(:last-child) .accommodation-link:focus,
+.col-lg-4:not(:last-child) .accommodation-link:hover {
+  background-color: var(--link-color);
+  color: #ffffff;
+  box-shadow: 3px 3px 3px var(--font-color);
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+.col-lg-4:last-child .accommodation-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 440px;
+  padding: 10px 10px 45px 40px;
+  position: relative;
+  border: none;
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #008000;
+  background-image: url("../img_hotel/41.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.col-lg-4:last-child .accommodation-link::after {
+  position: absolute;
+  right: 27px;
+  bottom: 42px;
+  content: url("../img_hotel/arrow-white.png");
+  transition-duration: 200ms;
+}
+
+.col-lg-4:last-child .accommodation-link:focus::after,
+.col-lg-4:last-child .accommodation-link:hover::after {
+  transform: translateX(10px);
+}
+
+.col-lg-4:last-child .accommodation-link::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+.accommodation-p {
+  display: inline-block;
+  margin: 0 33px 0 0;
+  padding: 0;
+  color: #999999;
+}
+
+.accommodation-second-p {
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: #999999;
+}
+
+.accommodation-rating {
+  width: 98px;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.accommodation-rating-img {
+  margin-right: 6px;
+}
+
+.accommodation-rating-img:last-child {
+  margin-right: 0;
+}
+
+.accommodation-h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.accommodation-span {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--font-color);
+}

@@ -1,0 +1,134 @@
+.header {
+  margin-bottom: 73px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  margin-right: 25px;  
+}
+
+.header-tel {
+  margin-right: auto;
+  font-size: 22px;
+  font-weight: 700;
+  color: #666666;
+  transition-duration: 200ms;
+}
+
+.header-tel:focus,
+.header-tel:hover {
+  color: var(--link-color);
+  
+}
+
+.header-account {
+  position: relative;
+  padding: 5px 10px 1px 17px;
+  color: var(--link-color);
+}
+
+.header-account::before {
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  content: url("../img_hotel/arrow.png");
+  transition-duration: 200ms;
+}
+
+.header-account:focus::before,
+.header-account:hover::before {
+  transform: translateX(-10px);
+}
+
+.header-nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 21px 0 1px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+}
+
+.header-nav-ul {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  padding: 0;
+}
+
+.header-nav-li {
+  margin-right: 9px;
+}
+
+.header-nav-li:last-child {
+  margin-right: 0;
+}
+
+.header-nav-a {
+  display: block;
+  padding: 19px;
+  transition-duration: 200ms;
+}
+
+.header-nav-a:focus,
+.header-nav-a:hover {
+  border-radius: 12px;
+  color: #ffffff;
+  background-color: var(--link-color);
+  box-shadow: 3px 3px 3px var(--font-color);
+
+}
+
+.header-search {
+  display: inline-flex;
+  align-items: center;
+  flex-basis: 353px;
+  height: 48px;
+  padding-right: 21px;
+  padding-left: 16px;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 15px;
+}
+
+.header-search-input {
+  flex-basis: 280px;
+  height: 100%;
+  margin-right: 14px;
+  background-color: transparent;  
+  border: none;
+}
+
+.header-search-input::placeholder {
+  font-size: 14px;
+  color: #bebebe;
+}
+
+.header-search-button {
+  flex-basis: 22px;
+  min-height: 22px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img_hotel/search.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.header-search-button:focus,
+.header-search-button:hover {
+  transform: scale(1.3);
+}

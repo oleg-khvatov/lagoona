@@ -1,0 +1,63 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:root {
+	--background-color: #f1f1f1;
+	--link-color: #cc9933;
+	--font-color: #333333;
+}
+
+body {
+	margin: 0;
+	padding-top: 30px;
+	background-color: var(--background-color);
+	font-family: "Muller", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+	color: var(--font-color);
+}
+
+img {
+	/* max-width: 100%; */
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.visually-hidden {                      /*ВИЗУАЛЬНО СКРЫТЫЙ*/
+	position: absolute !important;        /*абсолютное позиционирование (высокий приоритет)*/
+	clip: rect(1px 1px 1px 1px);          /*для IE6, IE7*/
+	clip: rect(1px, 1px, 1px, 1px);       /*Всё, что не помещается в эту область, будет обрезано и становится невидимым*/
+	padding: 0 !important;                /*внутренние отступы обнулены (!)*/
+	border: 0 !important;                 /*толщина рамки обнулена (!)*/
+	height: 1px !important;               /*высота (!)*/
+	width: 1px !important;                /*ширина (!)*/
+	overflow: hidden;                     /*переполнение не отображается*/
+}
+
+ul {
+	margin: 0;
+  padding: 0;
+	list-style-type: none;
+}
+
+.outline {
+  outline: 1px solid red;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}

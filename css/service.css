@@ -1,0 +1,70 @@
+.service {
+  margin-bottom: 47px;
+}
+.service-h2 {
+  margin: 0 0 25px 0;
+  padding: 1px 1px 1px 42px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.service-article {
+  min-height: 325px;
+  padding: 196px 120px 24px 45px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.exclusive-service {
+  background-image: url("../img_hotel/10.jpg"); 
+}
+
+.banquet-rental {
+  background-image: url("../img_hotel/15.jpg");
+}
+
+.sauna {
+  background-image: url("../img_hotel/12.jpg");
+}
+
+.secured-parking {
+  background-image: url("../img_hotel/11.jpg");
+}
+
+.service-link {
+  display: inline-block;
+  position: relative; 
+}
+
+.service-link::after {
+  position: absolute;
+  top: 3px;
+  right: -22px;
+  content: url("../img_hotel/arrow-w.png");
+  transition-duration: 200ms;
+}
+
+.service-link:focus .service-link::after,
+.service-link:hover::after {
+  transform: translateX(10px);
+}
+
+.service-link-p,
+.service-link-h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.service-link-h3 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--link-color);
+}
+

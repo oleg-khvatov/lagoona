@@ -1,0 +1,130 @@
+.booking-special {
+  margin-bottom: 70px;
+}
+
+.booking {
+  min-height: 600px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-button-span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.booking-p {
+  color: #999999;
+}
+
+.booking-h2 {
+  margin: 0 0 25px 0;
+  padding: 1px 1px 1px 42px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.booking-input {
+  width: 100%;
+  min-height: 70px;
+  padding: 21px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  border: none;
+}
+
+.booking-button {
+  width: 160px;
+  min-height: 70px;
+  margin-right: 30px;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  background-color: var(--link-color);
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.booking-button:focus,
+.booking-button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+  color: var(--link-color);
+  border: 3px solid var(--link-color);
+  box-shadow: 3px 3px 3px var(--font-color);
+}
+
+.booking-span {
+  color: var(--link-color);
+}
+
+.special {
+  min-height: 600px;
+  margin-left: -26px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.special-h2 {
+  margin: 0 0 25px 0;
+  padding: 1px 1px 1px 42px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.special-block {
+  min-height: 540px;
+  padding-top: 266px;
+  padding-left: 40px;
+  background-color:#008000;
+  background-image: url("../img_hotel/22.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 12px;  
+}
+
+.special-first-p {
+  width: 330px;
+  margin: 0 0 11px 0;
+  padding: 1px 1px 1px 1px;
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+.special-second-p {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 0;
+  padding: 20px 1px 1px;
+  color: var(--link-color);
+}
+
+.special-a {
+  position: relative;
+}
+
+.special-a::after {
+  position: absolute;
+  bottom: -4px;
+  right: -15px;
+  content: url("../img_hotel/arrow-w.png");
+  transition-duration: 200ms;
+}
+
+.special-a:focus::after,
+.special-a:hover::after {
+  transform: translateX(10px);
+}
+
+.special-span {
+  margin-right: 40px;
+  font-size: 35px;
+  color: #a4a3a2;
+}
